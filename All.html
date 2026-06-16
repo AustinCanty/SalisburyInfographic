@@ -265,6 +265,7 @@
   // so the water "rises" through the grid bottom-up rather than all at once.
   (function(){
     const wrap = document.getElementById('icons');
+    wrap.innerHTML = '';   // clear any pre-rendered blocks so we always build exactly 95
     const TOTAL = 95, ON = 66, COLS = 19;
     const cells = [];
     for(let i=0; i<TOTAL; i++){
